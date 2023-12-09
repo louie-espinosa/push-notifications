@@ -1,5 +1,6 @@
 "use strict"
-.console.log("Hello, WOrld!");
+
+console.log("Hello, World!");
 
 const button = document.querySelector('button')
   button.addEventListener("click", function() {
