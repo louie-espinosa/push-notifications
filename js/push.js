@@ -12,17 +12,17 @@ const button = document.querySelector('button')
         body: "This text is written on the body property",
         data: {hello: "World"}
       })
-      alert(Notification.data.hello)
+      alert(notification.data.hello)
     }
   })
 })
 //created variable, notification, and added event listener (close event) to log the message upon closing notification
 const notification = new Notification("example notification", {
   body: "this is more text",
-  data: {hello: "world"}
+  data: {hello: "Hello, World!"},
+  icon: "bell_push_icon.png"
 })
 notification.addEventListener("close", e => {
   console.log(e.target.data.hello);
 })
-//need to dl icons and save in icon dir INSIDE current dir
-//I can use these with icon property 
+//created icon dir and dl icon for use with icon prop
