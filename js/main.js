@@ -1,7 +1,4 @@
 "use strict"
-
-console.log("Hello, World!");
-
 //need conditional to run if permission is granted
 
 const button = document.querySelector('button')
@@ -20,9 +17,11 @@ const button = document.querySelector('button')
 const notification = new Notification("example notification", {
   body: "this is more text",
   data: {hello: "Hello, World!"},
-  icon: "bell_push_icon.png"
+  icon: '../assets/bell_push_icon.png'
 })
 notification.addEventListener("close", e => {
   console.log(e.target.data.hello);
+  
 })
-//created icon dir and dl icon for use with icon prop
+
+
